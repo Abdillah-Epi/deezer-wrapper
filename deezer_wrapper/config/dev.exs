@@ -6,6 +6,7 @@ config :deezer_wrapper, DeezerWrapper.Repo,
   password: "postgres",
   hostname: "localhost",
   database: "deezer_wrapper",
+  port: 5437,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
