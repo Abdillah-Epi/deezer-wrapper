@@ -7,6 +7,8 @@ defmodule DeezerWrapperWeb.Router do
 
   scope "/api", DeezerWrapperWeb do
     pipe_through :api
+
+    get "/artists/:name", ArtistController, :show
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
